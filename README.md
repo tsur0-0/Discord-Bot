@@ -12,26 +12,7 @@
 - `tests/` — testes automatizados.
 - `requirements.txt` — bibliotecas Python necessárias.
 
-## Iniciar no Linux
-
-Na pasta deste README, instale as dependências no ambiente virtual que você já usa:
-
-```bash
-musica-env/bin/python -m pip install -r requirements.txt
-musica-env/bin/python bot.py
-```
-
-Se o ambiente virtual estiver em outro local, substitua `musica-env/bin/python` pelo caminho correto do Python dele.
-
-O arquivo `private/TOKEN.env` deve conter `DISCORD_TOKEN=SEU_TOKEN`. O token não deve ser enviado a outras pessoas nem publicado em repositórios.
-
-## Testar sem iniciar o Discord
-
-```bash
-musica-env/bin/python -m unittest discover -s tests -v
-```
-
-Os testes configuram caminhos temporários para não sobrescrever os dados reais.
+- `Alguns desses arquivos são criados após o início do bot`
 
 ## Atualizações e versões
 
