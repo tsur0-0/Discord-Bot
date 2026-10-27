@@ -1,22 +1,18 @@
 # Discord Bot
 
-## Estrutura
+Este repositório contém **dois projetos separados**:
 
-- `bot.py` — código ativo do bot. É este arquivo que você executa.
-- `config.py` — versão, regras da economia, IDs e caminhos.
-- `private/TOKEN.env` — token do Discord. Não compartilhe este arquivo.
-- `data/data.json` — progresso dos jogadores.
-- `data/meta.json` — dados auxiliares do mercado e códigos promocionais.
-- `data/bot_profile.json` — bio e status personalizados do bot.
-- `versions/` — versões antigas preservadas; não são usadas ao iniciar o bot.
-- `tests/` — testes automatizados.
-- `requirements.txt` — bibliotecas Python necessárias.
+- **Bot principal:** continua na raiz (`bot.py`, `config.py`, `requirements.txt`). Esta migração não substitui nem altera o código dele.
+- **Julinha Chan 1.8:** versão comunitária migrada para a pasta [`Julinha/`](Julinha/README.md).
 
-- `Alguns desses arquivos são criados após o início do bot`
+## Executar o bot principal
+Siga as instruções já existentes para o projeto da raiz. Não misture o ambiente virtual nem o arquivo `.env` com o projeto Julinha.
 
-## Atualizações e versões
+## Executar a Julinha
+Entre na pasta `Julinha/` e siga o [README da Julinha](Julinha/README.md). Ela usa suas próprias dependências, configuração e banco de dados.
 
-- Edite o código ativo em `bot.py`.
-- Edite os valores de configuração em `config.py`.
-- Não execute arquivos de `versions/`: eles são cópias históricas.
-- Faça backup da pasta `data/` antes de atualizar.
+## Segurança
+A cópia da Julinha foi preparada sem tokens, bancos de dados, IDs pessoais ou perfis de feeds predefinidos. A configuração de feeds foi transferida vazia; preencha-a apenas localmente. O bot principal da raiz foi mantido sem alterações nesta migração.
+
+## Versões
+A versão anterior da Julinha está arquivada em `Julinha/Versions/1.7.1/`. A versão original também permanece no repositório [Julia-Chan](https://github.com/tsur0-0/Julia-Chan), incluindo o histórico de versões.
